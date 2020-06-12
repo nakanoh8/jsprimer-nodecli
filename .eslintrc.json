@@ -1,0 +1,29 @@
+{
+  "env": {
+    "commonjs": true,
+    "es2020": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 11
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "quotes": [2, "single"],
+    "semi": [2, "always"],
+    "prettier/prettier": [
+        "error",
+        {
+          "printWidth": 140,
+          "tabWidth": 2,
+          "useTabs": false,
+          "semi": true,
+          "singleQuote": true,
+          "trailingComma": "all",
+          "bracketSpacing": true,
+          "arrowParens": "always"
+        }
+      ]
+  }
+}
